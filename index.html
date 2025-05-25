@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Descubre la realiadad aumentada con Didactik!</title>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.4/dist/mindar-image.prod.js"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+
+    a-scene {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a-scene mindar-image="imageTargetSrc: targets.mind; maxTrack: 1" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false" embedded
+    renderer="colorManagement: true, logarithmicDepthBuffer: true">
+
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+    <!--> Matematicas </!-->
+    <a-entity mindar-image-target="targetIndex: 0">
+
+      <!-- Angulo recto (esquina superior izquierda) -->
+      <a-plane position="-0.35 0.15 0.01" rotation="90 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_recto.png">
+      </a-plane>
+
+      <!-- Angulo agudo (esquina superior derecha) -->
+      <a-plane position="0.35 0.15 0.01" rotation="90 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_agudo.png">
+      </a-plane>
+
+      <!-- Angulo obtuso (esquina inferior izquierda) -->
+      <a-plane position="-0.35 -0.3 0.01" rotation="90 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_obtuso.png">
+      </a-plane>
+
+      <!-- Angulo llano (esquina inferior derecha) -->
+      <a-plane position="0.35 -0.3 0.01" rotation="90 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_llano.png">
+      </a-plane>
+
+    </a-entity>
+
+
+
+    <!--> Comprension lectora </!-->
+    <a-entity mindar-image-target="targetIndex: 1">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
+        material="src: Assets/ra_comprension.png"></a-plane>
+    </a-entity>
+
+    <!--> Familia </!-->
+    <a-entity mindar-image-target="targetIndex: 2">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/fam.png"></a-plane>
+    </a-entity>
+
+    <!--> Emociones </!-->
+    <a-entity mindar-image-target="targetIndex: 3">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/emotions.png"></a-plane>
+    </a-entity>
+
+    <!--> Escuela </!-->
+    <a-entity mindar-image-target="targetIndex: 4">
+      <a-plane position="0 0.5 0" rotation="0 0 0" width="1" height="1" material="src: Assets/school.png"></a-plane>
+    </a-entity>
+
+    <!--> Casa </!-->
+    <a-entity mindar-image-target="targetIndex: 5">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/House.png"></a-plane>
+    </a-entity>
+
+    <!--> Animales </!-->
+    <a-entity mindar-image-target="targetIndex: 6">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/Animals.png"></a-plane>
+    </a-entity>
+
+    <!--> Cuerpo </!-->
+    <a-entity mindar-image-target="targetIndex: 7">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/body.png"></a-plane>
+    </a-entity>
+
+  </a-scene>
+
+  <script>
+    AFRAME.scenes[0].addEventListener("loaded", () => {
+      const scene = document.querySelector("a-scene");
+      const mindarComponent = scene.components["mindar-image"];
+      if (mindarComponent && !mindarComponent.started) {
+        mindarComponent.start();
+      }
+    });
+  </script>
+</body>
+
+</html>
