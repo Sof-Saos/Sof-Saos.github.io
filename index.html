@@ -66,7 +66,7 @@
 
     <!-- Comprension lectora -->
     <a-entity mindar-image-target="targetIndex: 1">
-      <a-image src="Assets/ra_comprension.png" position="0 0 0.01" width="0.6" height="1"></a-image>
+      <a-image src="Assets/ra_comprension.png" position="0 0 0" width="0.6" height="1"></a-image>
     </a-entity>
       <!--<a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
         material="src: Assets/ra_comprension.png"></a-plane>-->
@@ -74,7 +74,7 @@
 
     <!-- Familia -->
     <a-entity mindar-image-target="targetIndex: 2">
-      <a-plane position="0 -0.25 0" scale="0.05 0.05 0.05" rotation="0 0 0" width="1" height="1" material="src: Assets/fam.png"></a-plane>
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/fam.png"></a-plane>
     </a-entity>
 
     <!-- Emociones -->
@@ -102,7 +102,41 @@
       <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/body.png"></a-plane>
     </a-entity>
 
-  </a-scene>
+      <!-- Casa rompecabezas -->
+    <a-entity mindar-image-target="targetIndex: 8">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/House.png"></a-plane>
+    </a-entity>
+
+    <!-- familia rompecabezas -->
+    <a-entity mindar-image-target="targetIndex: 9">
+        <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/fam.png"></a-plane>
+    </a-entity>
+
+    <!-- Emociones rompecabezas -->
+    <a-entity mindar-image-target="targetIndex: 10">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/emotions.png"></a-plane>
+    </a-entity>
+
+    <!-- Cuerpo rompecabezas -->
+    <a-entity mindar-image-target="targetIndex: 11">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/House.png"></a-plane>
+    </a-entity>
+
+    <!-- Animales rompecabezas -->
+    <a-entity mindar-image-target="targetIndex: 12">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/Animals.png"></a-plane>
+    </a-entity>
+
+    <!-- Escuela rompecabezas -->
+    <a-entity mindar-image-target="targetIndex: 13">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/school.png"></a-plane>
+    </a-entity>
+
+    <!-- Mates con QR -->
+    <a-entity mindar-image-target="targetIndex: 14">
+      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/school.png"></a-plane>
+    </a-entity>
+
 
   <script>
     AFRAME.scenes[0].addEventListener("loaded", () => {
