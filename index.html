@@ -32,8 +32,7 @@
 <body>
   <a-scene mindar-image="imageTargetSrc: targets.mind; maxTrack: 4; filterMinCF: 0.001; filterBeta: 10; warmupTolerance: 10; missTolerance: 5" vr-mode-ui="enabled: false"
     
-    device-orientation-permission-ui="enabled: false" embedded
-    renderer="colorManagement: true, logarithmicDepthBuffer: true">
+    devic88erer="colorManagement: true, logarithmicDepthBuffer: true">
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
@@ -65,7 +64,7 @@
 
     <!-- Comprension lectora -->
     <a-entity mindar-image-target="targetIndex: 1">
-      <a-image src="Assets/ra_comprension.png" position="0 0 0" width="0.6" height="1"></a-image>
+      <a-image src="Assets/ra_comprension.png" position="0 0 0" width="1" height="1"></a-image>
     </a-entity>
       <!--<a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
         material="src: Assets/ra_comprension.png"></a-plane>-->
@@ -131,28 +130,7 @@
       <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/school.png"></a-plane>
     </a-entity>
 
-    <!-- Mates con QR -->
-    <a-entity mindar-image-target="targetIndex: 14">
-      <!-- Angulo recto (esquina superior izquierda) -->
-      <a-plane position="-0.35 0.15 0.01" rotation="50 0 0" width="0.3" height="0.4"
-        material="src: Assets/objeto_recto.png">
-      </a-plane>
-
-      <!-- Angulo agudo (esquina superior derecha) -->
-      <a-plane position="0.35 0.15 0.01" rotation="50 0 0" width="0.3" height="0.4"
-        material="src: Assets/objeto_agudo.png">
-      </a-plane>
-
-      <!-- Angulo obtuso (esquina inferior izquierda) -->
-      <a-plane position="-0.35 -0.25 0.01" rotation="50 0 0" width="0.3" height="0.4"
-        material="src: Assets/objeto_obtuso.png">
-      </a-plane>
-
-      <!-- Angulo llano (esquina inferior derecha) -->
-      <a-plane position="0.35 -0.25 0.01" rotation="50 0 0" width="0.3" height="0.4"
-        material="src: Assets/objeto_llano.png">
-      </a-plane>
-    </a-entity>
+  </a-scene>
 
 
   <script>
