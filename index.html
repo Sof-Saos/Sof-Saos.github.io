@@ -39,7 +39,6 @@
 
     <!-- Matematicas -->
     <a-entity mindar-image-target="targetIndex: 0">
-
       <!-- Angulo recto (esquina superior izquierda) -->
       <a-plane position="-0.35 0.15 0.01" rotation="50 0 0" width="0.3" height="0.4"
         material="src: Assets/objeto_recto.png">
@@ -134,7 +133,25 @@
 
     <!-- Mates con QR -->
     <a-entity mindar-image-target="targetIndex: 14">
-      <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="src: Assets/school.png"></a-plane>
+      <!-- Angulo recto (esquina superior izquierda) -->
+      <a-plane position="-0.35 0.15 0.01" rotation="50 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_recto.png">
+      </a-plane>
+
+      <!-- Angulo agudo (esquina superior derecha) -->
+      <a-plane position="0.35 0.15 0.01" rotation="50 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_agudo.png">
+      </a-plane>
+
+      <!-- Angulo obtuso (esquina inferior izquierda) -->
+      <a-plane position="-0.35 -0.25 0.01" rotation="50 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_obtuso.png">
+      </a-plane>
+
+      <!-- Angulo llano (esquina inferior derecha) -->
+      <a-plane position="0.35 -0.25 0.01" rotation="50 0 0" width="0.3" height="0.4"
+        material="src: Assets/objeto_llano.png">
+      </a-plane>
     </a-entity>
 
 
