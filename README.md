@@ -20,7 +20,7 @@
 
 ## 🖼️ How It Works
 
-1. Open the webpage with a device that has a camera.
+1. Open this webpage https://sof-saos.github.io/ with a device that has a camera. 
 2. Grant camera permissions when prompted.
 3. Point the camera at any of the printed markers (image targets).
 4. See the relevant AR visuals appear on top of the marker in real time.
